@@ -2,8 +2,9 @@
 
 ## Installation
 
-1. Install Ruby 3.1.2
-2. Install dependencies
+1. Clone this repo
+2. Install Ruby 3.1.2
+3. Install dependencies
 ```
 bundle install
 ```
@@ -16,5 +17,5 @@ bin/billing-calculator <file_path>
 
 For example:
 ```
-bin/billing-calculator basket_1.txt
+bin/billing-calculator ./test_cases/basket_1.txt
 ```
