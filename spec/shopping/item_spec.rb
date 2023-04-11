@@ -19,7 +19,7 @@ RSpec.describe Shopping::Item do
     end
 
     it 'returns the total shelf price for the item' do
-      expect(result).to eq(50.67)
+      expect(result).to eq(59.91)
     end
   end
 
@@ -31,7 +31,7 @@ RSpec.describe Shopping::Item do
     end
 
     it 'returns the total sales taxes for the item' do
-      expect(result).to eq(4.62)
+      expect(result).to eq(13.86)
     end
   end
 end

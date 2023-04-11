@@ -13,11 +13,15 @@ module Shopping
     end
 
     def shelf_price
-      (sales_taxes + unit_base_price * quantity).round(2)
+      (unit_sales_taxes + unit_base_price).round(2) * quantity
+    end
+
+    def unit_sales_taxes
+      SalesTaxes::Calculator.call(item: self)
     end
 
     def sales_taxes
-      SalesTaxes::Calculator.call(item: self)
+      (unit_sales_taxes * quantity).round(2)
     end
   end
 end
