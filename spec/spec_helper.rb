@@ -1,1 +1,4 @@
-require "rspec"
+require 'rspec'
+
+RSpec.configure do |config|
+end
