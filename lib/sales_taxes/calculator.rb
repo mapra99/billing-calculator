@@ -16,7 +16,7 @@ module SalesTaxes
         taxes += calculate_basic_tax(item)
         taxes += calculate_import_tax(item)
 
-        taxes
+        (taxes * 20).ceil / 20.0 # round up to nearest 0.05
       end
 
       private

@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'cli/shopping_basket_file_reader'
+require 'cli/billing_renderer'
+
+basket_file_uri = ARGV[0]
+
+shopping_basket = CLI::ShoppingBasketFileReader.parse_file(basket_file_uri)
+bill = CLI::BillingRenderer.new(shopping_basket:).render_basket_bill
+
+puts bill

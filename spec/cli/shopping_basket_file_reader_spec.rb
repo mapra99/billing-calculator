@@ -8,7 +8,7 @@ RSpec.describe CLI::ShoppingBasketFileReader do
   describe '.parse_file' do
     subject(:result) { described_class.parse_file(uri) }
 
-    let(:uri) { 'spec/test_files/basket_1.txt' }
+    let(:uri) { 'test_cases/basket_1.txt' }
 
     it 'returns a shopping basket instance' do
       expect(result).to be_a Shopping::Basket

@@ -1,3 +1,8 @@
+PATH
+  remote: .
+  specs:
+    billing-calculator (1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -45,6 +50,7 @@ PLATFORMS
   arm64-darwin-22
 
 DEPENDENCIES
+  billing-calculator!
   byebug
   rspec
   rubocop
