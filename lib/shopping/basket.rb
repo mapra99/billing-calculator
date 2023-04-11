@@ -4,7 +4,7 @@ module Shopping
   class Basket
     attr_reader :items
 
-    def initialize(items:)
+    def initialize(items: [])
       @items = items
     end
 
